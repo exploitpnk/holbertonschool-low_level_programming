@@ -17,13 +17,20 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		initialamount = atoi(argv[1]);
-		for (i = 0; initialamount != 0; i++)
+		if (initialamount >= 0)
 		{
-			cents = (cents + initialamount / cent_coins[i]);
-			initialamount = (initialamount % cent_coins[i]);
+			for (i = 0; initialamount != 0; i++)
+			{
+				cents = (cents + initialamount / cent_coins[i]);
+				initialamount = (initialamount % cent_coins[i]);
+			}
+			printf("%d\n", cents);
+			return (0);
 		}
-		printf("%d\n", cents);
-		return (0);
+		else
+		{
+			printf("0\n");
+		}
 	}
 	else
 	{
@@ -31,3 +38,4 @@ int main(int argc, char **argv)
 		return (1);
 	}
 }
+
