@@ -25,7 +25,6 @@ int main(int argc, char **argv)
 				initialamount = (initialamount % cent_coins[i]);
 			}
 			printf("%d\n", cents);
-			return (0);
 		}
 		else
 		{
@@ -37,5 +36,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
+	return (0);
 }
 
