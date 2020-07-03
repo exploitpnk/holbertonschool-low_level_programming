@@ -1,0 +1,7 @@
+# Makefile using variables
+
+CC = gcc
+SRC = .c
+
+all:
+	$(CC) main$(SRC) holberton$(SRC) -o holberton
