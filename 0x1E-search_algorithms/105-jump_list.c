@@ -1,4 +1,4 @@
-#include "algorithms.h"
+#include "search_algos.h"
 #include <math.h>
 /**
  * list_move - moves list x positions

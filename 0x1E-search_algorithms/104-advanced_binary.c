@@ -1,4 +1,4 @@
-#include "algorithms.h"
+#include "search_algos.h"
 
 /**
  * print_arrayAd - Prints an array between two boundaries
